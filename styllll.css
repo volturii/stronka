@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top, #c72092 , #6c14d0);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url(image/mak.jpg);*/
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+section nav .logo{
+    font-size: 35px;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    left: -4%;
+}
+
+
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover{
+    color: #c72092;
+}
+
+section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+section nav .icons i:hover{
+    color: #c72092;
+}
+
+
+
+
+.main1 {
+  
+  margin-top: 105px;
+}
+
+
+
+
+
+
+.main12 {
+  background-image: url(image/kuchnia.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+ 
+}
+
+.main_content1 {
+  display: flex;
+  align-items: center;
+}
+
+
+.main_image1 {
+    max-width: 100%; 
+    overflow: auto;
+}
+.main_image1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 66%;;
+  position: absolute;
+  top: 25%; /* Przesuń do góry o 50% wysokości strony */
+  left: 56%; /* Przesuń do środka poziomo */
+
+
+}
+
+
+
+
+
+.container {
+  position: relative;
+  display: inline-block;
+  width: 90%; /* Dodajemy szerokość 100% do kontenera */
+}
+
+.image {
+  display: block;
+  width: 95%; /* Zmieniamy szerokość na 100% */
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.text {
+  position: absolute;
+  top: 58%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Zmniejszamy szerokość na 90% */
+  max-width: 600px; /* Ustalamy maksymalną szerokość */
+  font-size: 19px;
+  color: #333; /* Poprawiamy kolor tekstu */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* Styl dla przycisku */
+.modal-button2 {
+    padding: 10px 67px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 70%; /* Przesuń do góry o 50% wysokości strony */
+    left: 46%; /* Przesuń do środka poziomo */
+    transform: translate(-50%, -50%);
+    
+   
+}
+    
+.modal-button2:hover {
+    background-color: #45a049;
+}
+
+    /* Styl dla okienka modalnego */
+.modal {
+    display: none; /* Ukryj okienko początkowo */
+    position: fixed; /* Ustaw na pozycji stałej */
+    top: 52%; /* Przesuń do góry o 50% wysokości strony */
+    left: 46%; /* Przesuń do środka poziomo */
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    
+      
+}
+    
+    /* Styl dla zawartości okienka modalnego */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Ustaw odstęp od góry i dołu, automatycznie dostosuj marginesy boczne */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+}
+    
+    /* Styl dla przycisku zamknięcia */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    
+.close:hover,
+.close:focus {
+     color: black;
+    text-decoration: none;
+     cursor: pointer;
+}
+
+
+
+th, td {
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 13px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+.modal-button1 {
+    padding: 10px 50px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute; /* Ustaw na pozycji stałej */
+    top: 77%; /* Przesuń do góry o 50% wysokości strony */
+    left: 46%; /* Przesuń do środka poziomo */
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 40px;
+}
+    
+.modal-button:hover {
+    background-color: #45a049;
+}
+

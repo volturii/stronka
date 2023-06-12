@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makaron</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <body>
+        
+       <section>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">Makaron</a></h1>
+            </div>
+
+            <ul>
+                <li><a href="#Home">Strona główna</a></li>
+                <li><a href="#Products">Oferta</a></li>
+                <li><a href="#About">O firmie</a></li>
+                <li><a href="#Review">Galeria</a></li>
+                <li><a href="#Servises">Kontakt</a></li>
+            </ul>
+            
+<!-- ikonty serce koszyk profil-->
+            <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+        </nav>
+        
+        
+        
+<div class="main1" id="Home">
+    
+            <div class="main_content1">
+                <div class="main_text1">
+                    <div class="informacje">
+                        <div class="container">
+                        <img class="image" src="image/notessssssssss.png" alt="Zdjęcie">
+                            
+                    <h1>Świderki<br></h1>
+                    <h4>Sposób przygotowania</h4>
+                    <p>
+                        Zagotuj wodę, 1 l na 100 g makaronu. Posól według uznania. Do gotującej się wody wrzuć porcję Makaronu Lubella. Gotuj 5-6 minut. Od czasu do czasu zamieszaj. Ugotowany makaron odcedź.
+                    </p>
+                        <br>
+                    <h4>O produkcie</h4>
+                    <p>
+                        Lubella Mini kółka to makaron, który chce się jeść na okrągło! Dobrze komponuje się z zupami, ale również w sałatkach i zapiekankach. Najmłodszym smakoszom z pewnością do gustu przypadnie nietypowy kształt makaronu, który pobudzi ich wyobraźnię i zamieni każdy posiłek w świetną zabawę.
+                    </p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+
+            </div>
+
+
+
+
+
+  
+  <!-- Przycisk otwierający okienko modalne -->
+  <button class="modal-button1" onclick="openModal()">Wartości odżywcze</button>
+  
+  <!-- Okienko modalne -->
+  <div id="myModal" class="modal">
+    <!-- Zawartość okienka modalnego -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <table>
+  <tr>
+    <th>Wartość odżywcza</th>
+    <th>W 100g suchego produktu</th>
+  </tr>
+  <tr>
+    <td>Energia</td>
+    <td>1487 kJ / 351 kcal</td>
+  </tr>
+  <tr>
+    <td>Tłuszcz</td>
+    <td>1,4 g</td>
+  </tr>
+  <tr>
+    <td>- w tym kwasy nasycone</td>
+    <td>0,4 g</td>
+  </tr>
+  <tr>
+    <td>Węglowodany</td>
+    <td>70 g</td>
+  </tr>
+  <tr>
+    <td>- w tym cukry</td>
+    <td>4,2 g</td>
+  </tr>
+  <tr>
+    <td>Błonnik</td>
+    <td>3,0 g</td>
+  </tr>
+  <tr>
+    <td>Białko</td>
+    <td>13 g</td>
+  </tr>
+  <tr>
+    <td>Sól</td>
+    <td>0,03 g</td>
+  </tr>
+</table>
+    </div>
+  </div>
+
+  <script>
+    // Pobierz referencję do okienka modalnego
+    var modal = document.getElementById("myModal");
+
+    // Pobierz referencję do przycisku zamknięcia
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // Funkcja otwierająca okienko modalne
+    function openModal() {
+      modal.style.display = "block"; // Ustaw wyświetlanie na "block"
+    }
+
+    // Funkcja zamykająca okienko modalne
+    function closeModal() {
+      modal.style.display = "none"; // Ustaw wyświetlanie na "none"
+    }
+
+    // Zamykanie okienka modalnego po kliknięciu na obszar poza zawartością
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+<button class="modal-button" onclick="openModal()">Skład produktu</button>
+  
+  <!-- Okienko modalne -->
+  <div id="myModal" class="modal">
+    <!-- Zawartość okienka modalnego -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <table>
+  <tr>
+    <th>Wartość odżywcza</th>
+    <th>W 100g suchego produktu</th>
+  </tr>
+  <tr>
+    <td>Energia</td>
+    <td>1487 kJ / 351 kcal</td>
+  </tr>
+  <tr>
+    <td>Tłuszcz</td>
+    <td>1,4 g</td>
+  </tr>
+  <tr>
+    <td>- w tym kwasy nasycone</td>
+    <td>0,4 g</td>
+  </tr>
+  <tr>
+    <td>Węglowodany</td>
+    <td>70 g</td>
+  </tr>
+  <tr>
+    <td>- w tym cukry</td>
+    <td>4,2 g</td>
+  </tr>
+  <tr>
+    <td>Błonnik</td>
+    <td>3,0 g</td>
+  </tr>
+  <tr>
+    <td>Białko</td>
+    <td>13 g</td>
+  </tr>
+  <tr>
+    <td>Sól</td>
+    <td>0,03 g</td>
+  </tr>
+</table>
+    </div>
+  </div>
+
+  <script>
+    // Pobierz referencję do okienka modalnego
+    var modal = document.getElementById("myModal");
+
+    // Pobierz referencję do przycisku zamknięcia
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // Funkcja otwierająca okienko modalne
+    function openModal() {
+      modal.style.display = "block"; // Ustaw wyświetlanie na "block"
+    }
+
+    // Funkcja zamykająca okienko modalne
+    function closeModal() {
+      modal.style.display = "none"; // Ustaw wyświetlanie na "none"
+    }
+
+    // Zamykanie okienka modalnego po kliknięciu na obszar poza zawartością
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+                                <div class="main_image1">
+                    <img src="image/produktt.png">
+                </div>
+         
+</div>
+
+ 
+
+    </section>
+        
+        
+        
+        
+</body>
+</html>
